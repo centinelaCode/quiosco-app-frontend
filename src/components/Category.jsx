@@ -9,7 +9,7 @@ export default function Category({category}) {
             src={`/img/icono_${icono}.svg`}
             className='w-12'
          />
-         <p className='text.lg font-bold truncate'>{nombre}</p>
+         <p className='text-lg font-bold truncate'>{nombre}</p>
       </div>
    )
 }

@@ -25,7 +25,7 @@ export default function Sidebar() {
          <div className='my-5 px-5'>
             <button
                type='button'
-               className='text-center bg-red-500 hover:bg-red-700 w-full p-3 font-bold text-white rounded-md truncate'
+               className='text-center bg-red-600 hover:bg-red-800 w-full p-3 font-bold text-white rounded-md truncate'
             >
                Cancelar Orden
             </button>
