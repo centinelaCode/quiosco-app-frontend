@@ -1,3 +1,5 @@
+import { categories } from '../data/categories'
+import Category from '../components/Category'
 
 export default function Sidebar() {
    return (
@@ -5,19 +7,19 @@ export default function Sidebar() {
       
          <div className="m-5 p-4 flex justify-center">
             <img 
-               src=""
+               src="/img/logo.svg"
                alt="imagen logotipo" 
                className='w-40'
             />
          </div>
 
          <div className='mt-10'>
-            {/* {categories.map((category) => (            
-               <Categoria 
+            {categories.map((category) => (     
+               <Category
                   key={category.id}
                   category={category}
                />
-            ))} */}
+            ))}
          </div>
 
          <div className='my-5 px-5'>
