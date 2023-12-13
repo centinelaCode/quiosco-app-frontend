@@ -1,17 +1,23 @@
-import { createContext } from 'react'
+import { createContext, useState } from 'react'
+import { categories as categoriesDB } from '../data/categories'
 
 const QuioscoContext = createContext();
 
-const QuioscoProvider = ({children}) => {
+const QuioscoProvider = ({ children }) => {
+   //! state for  categories
+   const [categories, setCategoriesState] = useState(categoriesDB)
 
-   const hola = 'Hola';
+   // console.log(categories)
+   
    
    return (
       <QuioscoContext.Provider
          value={{
-            hola
+            categories
          }}
-      >{children}</QuioscoContext.Provider>
+      >
+         { children }
+      </QuioscoContext.Provider>
    )
 }
 

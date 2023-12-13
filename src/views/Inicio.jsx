@@ -4,7 +4,7 @@ import Product from '../components/Product'
 export default function Inicio() {
 
    return (
-      <>
+      <>         
          <h1 className='text-4xl my-5 font-black'>Inicio</h1>
          <p className='text-2xl my-10'>
          Elige y personaliza tu pedido con los siguientes productos.

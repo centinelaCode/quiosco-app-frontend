@@ -1,7 +1,9 @@
-import { categories } from '../data/categories'
+import useQuiosco from '../hooks/useQuisco'
 import Category from '../components/Category'
 
 export default function Sidebar() {
+   const { categories } = useQuiosco()
+
    return (
       <aside className="md:w-72">
       
